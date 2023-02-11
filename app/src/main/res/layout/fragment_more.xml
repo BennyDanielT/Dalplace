@@ -1,0 +1,184 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="@dimen/padding_normal"
+    tools:context=".fragments.MoreFragment">
+
+    <!-- GUIDELINES START -->
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/guidelineTop"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:orientation="horizontal"
+        app:layout_constraintGuide_percent=".60" />
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/guidelineBottom"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:orientation="horizontal"
+        app:layout_constraintGuide_percent=".80" />
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/guidelineStart"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:orientation="vertical"
+        app:layout_constraintGuide_percent=".05" />
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/guidelineEnd"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:orientation="vertical"
+        app:layout_constraintGuide_percent=".95" />
+
+    <!-- GUIDELINES END -->
+    <!-- SETTINGS SECTION STARTS -->
+
+    <TextView
+        android:id="@+id/tvSettings"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:text="@string/settings"
+        android:textSize="@dimen/tv_title"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/tvMyProfile"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/margin_standard"
+        android:clickable="true"
+        android:focusable="true"
+        android:paddingHorizontal="@dimen/padding_normal"
+        android:paddingTop="@dimen/padding_large"
+        android:text="@string/my_profile"
+        android:textSize="@dimen/tv_subtitle"
+        app:layout_constraintStart_toStartOf="@id/guidelineStart"
+        app:layout_constraintTop_toBottomOf="@id/tvSettings" />
+
+    <com.google.android.material.divider.MaterialDivider
+        android:id="@+id/dividerMyProfile"
+        android:layout_width="0dp"
+        android:layout_height="@dimen/stroke_level_1"
+        android:layout_marginHorizontal="@dimen/padding_normal"
+        android:layout_marginTop="@dimen/margin_normal"
+        app:layout_constraintEnd_toEndOf="@id/guidelineEnd"
+        app:layout_constraintStart_toStartOf="@id/guidelineStart"
+        app:layout_constraintTop_toBottomOf="@id/tvMyProfile" />
+
+    <TextView
+        android:id="@+id/tvMyPosts"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:paddingHorizontal="@dimen/padding_normal"
+        android:paddingTop="@dimen/padding_large"
+        android:text="@string/my_posts"
+        android:textSize="@dimen/tv_subtitle"
+        app:layout_constraintStart_toStartOf="@id/guidelineStart"
+        app:layout_constraintTop_toBottomOf="@id/dividerMyProfile" />
+
+    <com.google.android.material.divider.MaterialDivider
+        android:id="@+id/dividerMyPosts"
+        android:layout_width="0dp"
+        android:layout_height="@dimen/stroke_level_1"
+        android:layout_marginHorizontal="@dimen/padding_normal"
+        android:layout_marginTop="@dimen/margin_normal"
+        app:layout_constraintEnd_toEndOf="@id/guidelineEnd"
+        app:layout_constraintStart_toStartOf="@id/guidelineStart"
+        app:layout_constraintTop_toBottomOf="@id/tvMyPosts" />
+
+    <TextView
+        android:id="@+id/tvFeedback"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:clickable="true"
+        android:focusable="true"
+        android:paddingHorizontal="@dimen/padding_normal"
+        android:paddingTop="@dimen/padding_large"
+        android:text="@string/provide_feedback"
+        android:textSize="@dimen/tv_subtitle"
+        app:layout_constraintStart_toStartOf="@id/guidelineStart"
+        app:layout_constraintTop_toBottomOf="@id/dividerMyPosts" />
+
+    <!-- SETTINGS SECTION END -->
+    <!-- SUPPORT SECTION STARTS -->
+
+    <TextView
+        android:id="@+id/tvSupport"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:text="@string/support"
+        android:textSize="@dimen/tv_title"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@id/guidelineTop" />
+
+
+    <!-- SUPPORT SECTION ENDS -->
+    <!-- LOGOUT SECTION STARTS -->
+
+    <TextView
+        android:id="@+id/tvTerms"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/margin_standard"
+        android:paddingHorizontal="@dimen/padding_normal"
+        android:paddingTop="@dimen/padding_large"
+        android:text="@string/terms_amp_policies"
+        android:textSize="@dimen/tv_subtitle"
+        app:layout_constraintEnd_toEndOf="@id/guidelineEnd"
+        app:layout_constraintStart_toStartOf="@id/guidelineStart"
+        app:layout_constraintTop_toBottomOf="@id/tvSupport" />
+
+    <com.google.android.material.divider.MaterialDivider
+        android:id="@+id/dividerTerms"
+        android:layout_width="0dp"
+        android:layout_height="@dimen/stroke_level_1"
+        android:layout_marginHorizontal="@dimen/padding_normal"
+        android:layout_marginTop="@dimen/margin_normal"
+        app:layout_constraintEnd_toEndOf="@id/guidelineEnd"
+        app:layout_constraintStart_toStartOf="@id/guidelineStart"
+        app:layout_constraintTop_toBottomOf="@id/tvTerms" />
+
+    <TextView
+        android:id="@+id/resetpassword"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:clickable="true"
+        android:focusable="true"
+        android:paddingHorizontal="@dimen/padding_normal"
+        android:paddingTop="@dimen/padding_large"
+        android:text="@string/reset_password"
+        android:textSize="@dimen/tv_subtitle"
+        app:layout_constraintStart_toStartOf="@id/guidelineStart"
+        app:layout_constraintTop_toBottomOf="@id/dividerTerms" />
+
+    <TextView
+        android:id="@+id/tvLogout"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:clickable="true"
+        android:focusable="true"
+        android:gravity="center"
+        android:paddingVertical="@dimen/padding_large"
+        android:text="@string/logout"
+        android:textColor="@color/red"
+        android:textSize="@dimen/tv_subtitle"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@id/guidelineBottom" />
+
+    <!-- LOGOUT SECTION ENDS -->
+
+</androidx.constraintlayout.widget.ConstraintLayout>

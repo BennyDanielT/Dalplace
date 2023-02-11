@@ -1,0 +1,170 @@
+<?xml version="1.0" encoding="utf-8"?><!-- This screen contains details of a transaction. -->
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".fragments.ScannerDetailsFragment">
+
+    <ScrollView
+        android:id="@+id/scrollView"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:contentDescription="@string/add_product"
+        android:fillViewport="true"
+        android:padding="@dimen/padding_normal"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <com.google.android.material.textview.MaterialTextView
+                android:id="@+id/scanner_details_title"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/margin_large"
+                android:gravity="center_horizontal"
+                android:text="@string/transaction_details"
+                android:textSize="30sp"
+                android:textStyle="bold"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+
+            <ImageView
+                android:id="@+id/ProductImage"
+                android:layout_width="100dp"
+                android:layout_height="100dp"
+                android:layout_marginTop="@dimen/margin_large"
+                android:gravity="center_horizontal"
+                android:scaleType="fitCenter"
+                android:src="@drawable/qr_bg"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@id/scanner_details_title" />
+
+            <com.google.android.material.textview.MaterialTextView
+                android:id="@+id/scanner_details_buyer_id"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:gravity="start"
+                android:text="Hello"
+                app:layout_constraintBottom_toBottomOf="@id/label_buyer_id"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_weight="1"
+                app:layout_constraintStart_toEndOf="@id/label_buyer_id"
+                app:layout_constraintTop_toTopOf="@id/label_buyer_id" />
+
+            <com.google.android.material.textview.MaterialTextView
+                android:id="@+id/label_product_id"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/margin_medium"
+                android:gravity="end"
+                android:text="Product Id: "
+                android:textStyle="bold"
+                app:layout_constraintEnd_toStartOf="@id/scanner_details_product_id"
+                app:layout_constraintHorizontal_weight="1"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@id/label_product_name" />
+
+            <com.google.android.material.textview.MaterialTextView
+                android:id="@+id/label_buyer_id"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="64dp"
+                android:gravity="end"
+                android:text="Buyer: "
+                android:textStyle="bold"
+                app:layout_constraintEnd_toStartOf="@id/scanner_details_buyer_id"
+                app:layout_constraintHorizontal_weight="1"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@id/ProductImage" />
+
+            <com.google.android.material.textview.MaterialTextView
+                android:id="@+id/label_product_name"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/margin_medium"
+                android:gravity="end"
+                android:text="Product Name: "
+                android:textStyle="bold"
+                app:layout_constraintEnd_toStartOf="@id/scanner_details_product_name"
+                app:layout_constraintHorizontal_weight="1"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@id/label_seller_name" />
+
+            <com.google.android.material.textview.MaterialTextView
+                android:id="@+id/label_seller_name"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/margin_medium"
+                android:gravity="end"
+                android:text="Seller: "
+                android:textStyle="bold"
+                app:layout_constraintEnd_toStartOf="@id/scanner_details_seller_name"
+                app:layout_constraintHorizontal_weight="1"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@id/label_buyer_id" />
+
+            <com.google.android.material.textview.MaterialTextView
+                android:id="@+id/scanner_details_product_id"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="@dimen/margin_standard"
+                android:gravity="start"
+                android:text="Product ID"
+                app:layout_constraintBottom_toBottomOf="@id/label_product_id"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_weight="1"
+                app:layout_constraintStart_toEndOf="@id/label_product_id"
+                app:layout_constraintTop_toTopOf="@id/label_product_id" />
+
+            <com.google.android.material.textview.MaterialTextView
+                android:id="@+id/scanner_details_product_name"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="@dimen/margin_standard"
+                android:gravity="start"
+                android:text="Name"
+                app:layout_constraintBottom_toBottomOf="@id/label_product_name"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_weight="1"
+                app:layout_constraintStart_toEndOf="@id/label_product_name"
+                app:layout_constraintTop_toTopOf="@id/label_product_name" />
+
+            <com.google.android.material.textview.MaterialTextView
+                android:id="@+id/scanner_details_seller_name"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="@dimen/margin_standard"
+                android:gravity="start"
+                android:text="Seller"
+                app:layout_constraintBottom_toBottomOf="@id/label_seller_name"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_weight="1"
+                app:layout_constraintStart_toEndOf="@id/label_seller_name"
+                app:layout_constraintTop_toTopOf="@id/label_seller_name" />
+
+
+            <!--    style="@style/BtnPrimary"-->
+            <com.google.android.material.button.MaterialButton
+                android:id="@+id/completeTransaction"
+                android:layout_width="200dp"
+                android:layout_height="50dp"
+                android:layout_marginTop="124dp"
+                android:gravity="center_horizontal"
+                android:text="@string/deliver_product"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent" />
+        </androidx.constraintlayout.widget.ConstraintLayout>
+    </ScrollView>
+
+</androidx.constraintlayout.widget.ConstraintLayout>
+
+    <!--    style="@style/BtnPrimary"-->

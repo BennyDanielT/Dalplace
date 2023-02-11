@@ -1,0 +1,39 @@
+{
+  "project_info": {
+    "project_number": "512832061642",
+    "project_id": "dalplace-9963f",
+    "storage_bucket": "dalplace-9963f.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:512832061642:android:267e5f3806a872c229f433",
+        "android_client_info": {
+          "package_name": "com.example.dalplace"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "512832061642-1pvq2mp9jbbffh4jdl25iplkaackjt40.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBeM_dWaQ1_KSlNsiNqOe8s0N-KJz9MShY"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "512832061642-1pvq2mp9jbbffh4jdl25iplkaackjt40.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

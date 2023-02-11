@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+    <item
+        android:id="@+id/fragment_admin_home"
+        android:icon="@drawable/ic_baseline_home_24"
+        android:title="@string/daily_sales" />
+    <item
+        android:id="@+id/fragment_admin_scan_qr_code"
+        android:icon="@drawable/ic_baseline_qr_code_scanner_24"
+        android:title="@string/qr_code_scan_admin" />
+
+    <item
+        android:id="@+id/fragment_feedback"
+        android:icon="@drawable/ic_baseline_feedback_24"
+        android:title="@string/feedbacks" />
+
+    <item
+        android:id="@+id/admin_logout"
+        android:icon="@drawable/ic_baseline_exit_to_app_24"
+        android:title="@string/logout" />
+</menu>
+
+
+

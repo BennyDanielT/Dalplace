@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <!-- Width -->
+    <dimen name="width_border">4dp</dimen>
+
+    <!-- Height -->
+    <dimen name="nav_header_height">150dp</dimen>
+    <dimen name="multiline_text_min_height">120dp</dimen>
+
+    <!-- Text Size -->
+    <dimen name="toolbar_title">24sp</dimen>
+    <dimen name="tv_title">24sp</dimen>
+    <dimen name="tv_subtitle">16sp</dimen>
+    <dimen name="tv_body1">16sp</dimen>
+    <dimen name="tv_body2">14sp</dimen>
+    <dimen name="tv_caption">12sp</dimen>
+
+    <!-- Elevation -->
+    <dimen name="toolbar_elevation">12dp</dimen>
+    <dimen name="elevation_layer_0">0dp</dimen>
+    <dimen name="elevation_layer_1">2dp</dimen>
+    <dimen name="elevation_layer_2">4dp</dimen>
+    <dimen name="elevation_layer_3">6dp</dimen>
+    <dimen name="elevation_layer_4">8dp</dimen>
+    <dimen name="elevation_layer_5">10dp</dimen>
+
+    <!-- Margins -->
+    <dimen name="margin_standard">4dp</dimen>
+    <dimen name="margin_normal">8dp</dimen>
+    <dimen name="margin_medium">16dp</dimen>
+    <dimen name="margin_large">32dp</dimen>
+    <dimen name="margin_separator">8dp</dimen>
+
+    <!-- Padding -->
+    <dimen name="padding_standard">4dp</dimen>
+    <dimen name="padding_normal">8dp</dimen>
+    <dimen name="padding_large">16dp</dimen>
+
+    <!-- Radius -->
+    <dimen name="radius_level_1">4dp</dimen>
+    <dimen name="radius_level_2">8dp</dimen>
+    <dimen name="radius_level_3">12dp</dimen>
+    <dimen name="radius_circle">16dp</dimen>
+
+    <!-- Stroke -->
+    <dimen name="stroke_level_1">1dp</dimen>
+    <dimen name="stroke_level_2">2dp</dimen>
+</resources>

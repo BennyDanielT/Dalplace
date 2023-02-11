@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:orientation="vertical"
+    android:background="@color/white"
+
+    android:layout_height="wrap_content">
+
+ <androidx.cardview.widget.CardView
+     android:layout_width="match_parent"
+     android:layout_margin="10dp"
+
+     android:layout_height="match_parent">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:orientation="vertical"
+        android:padding="10dp"
+        android:layout_height="match_parent">
+    <ImageView
+        android:layout_width="400dp"
+        android:layout_gravity="center"
+        android:id="@+id/imgPurchaseQR"
+        android:padding="20dp"
+        android:layout_height="400dp">
+
+    </ImageView>
+    <TextView
+        android:layout_width="match_parent"
+        android:id="@+id/txtTitleQR"
+        android:textSize="16sp"
+        android:text="Title"
+        android:textColor="@color/black"
+        android:textStyle="bold"
+        android:textAlignment="center"
+        android:layout_height="wrap_content">
+
+    </TextView>
+    <TextView
+        android:layout_width="match_parent"
+        android:id="@+id/txtIdQR"
+        android:text="Product ID"
+        android:textColor="@color/black"
+        android:textAlignment="center"
+        android:textSize="16sp"
+
+        android:layout_height="wrap_content">
+
+    </TextView>
+       <TextView
+           android:layout_width="match_parent"
+           android:id="@+id/txtQRPrice"
+           android:text="Price"
+           android:textColor="@color/black"
+           android:textAlignment="center"
+           android:textSize="16sp"
+
+           android:layout_height="wrap_content">
+
+       </TextView>
+
+    </LinearLayout>
+ </androidx.cardview.widget.CardView>
+
+
+</LinearLayout>

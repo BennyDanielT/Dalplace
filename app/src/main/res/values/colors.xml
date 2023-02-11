@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="purple_200">#FFBB86FC</color>
+    <color name="purple_500">#FF6200EE</color>
+    <color name="purple_700">#FF3700B3</color>
+    <color name="teal_200">#FF03DAC5</color>
+    <color name="teal_700">#FF018786</color>
+
+    <color name="wingtip_200">#FFA2A2A2</color>
+    <color name="wingtip_500">#FF242424</color>
+    <color name="wingtip_700">#FF141414</color>
+    <color name="beak_gold_200">#FFFFF192</color>
+    <color name="beak_gold_500">#FFFFD400</color>
+    <color name="beak_gold_700">#FFFBB800</color>
+    <color name="black">#FF000000</color>
+    <color name="white">#FFFFFFFF</color>
+    <color name="red">#FFE74C3C</color>
+    <color name="green">#FF2ECC71</color>
+    <color name="blue">#FF3498DB</color>
+    <color name="yellow">#FFF1C40F</color>
+    <color name="orange">#FFE67E22</color>
+    <color name="grey">#808080</color>
+    <color name="text_light">@color/white</color>
+    <color name="text_dark">@color/black</color>
+    <color name="text_hint">@color/wingtip_200</color>
+    <color name="error">@color/red</color>
+    <color name="warning">@color/orange</color>
+    <color name="success">@color/green</color>
+    <color name="info">@color/blue</color>
+
+    <color name="border_light">#0093ED</color>
+    <color name="border_dark">#0093ED</color>
+
+    <color name="bg_wingtip_light">@color/wingtip_200</color>
+    <color name="bg_wingtip_dark">@color/wingtip_700</color>
+    <color name="bg_beak_gold_dark">@color/beak_gold_700</color>
+    <color name="bg_beak_gold_light">@color/beak_gold_200</color>
+    <color name="bg_cloud_white">@color/white</color>
+
+</resources>
